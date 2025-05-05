@@ -11,7 +11,7 @@ function Toggle() {
       </button>
      { show && 
        <div className="mb-4 bg-gray-100 p-4 rounded-lg">
-        <img src="/src/assets/tailwindcss-1633184775.webp" className='mb-4'/>
+        <img src="https://i.postimg.cc/9F28MXmG/tailwindcss-1633184775.webp" className='mb-4'/>
        <p className="text-gray-700">This is the content that will be shown or hidden when toggled.</p>
      </div>
      }

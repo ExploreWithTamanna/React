@@ -6,7 +6,7 @@ function Card({title, price}) {
       <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
         <img
           className="w-full h-50 object-cover"
-          src="/src/assets/Apple-Watch-Series-9-(5)-2212-800x800.jpg"
+          src="https://i.postimg.cc/Jz4pNTB0/Apple-Watch-Series-9-5-2212-800x800.jpg"
           alt="Product Image"
         />
         <div className="px-6 py-4">
