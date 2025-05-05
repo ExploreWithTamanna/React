@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import GridCard from './GridCard';
+import PulseDotsLoader from './PulseDotsLoader';
 
 function DataFetchGridCard() {
     const[products, setProducts]=useState([]);
+    const [loading, setLoading]=useState(true);
+
 
     useEffect(()=>{
        const fetchData=async ()=>{
@@ -10,10 +13,15 @@ function DataFetchGridCard() {
         const data=await res.json();
         console.log(data);
         setProducts(data);
+        setLoading(false);
        }
        fetchData();
     }, [])
     console.log(products);
+    
+    if(loading){
+      return <PulseDotsLoader/>
+    }
   return (
     <div className="container  mx-auto p-4 bg-yellow-200">
         <h1 className="text-3xl text-center font-semibold text-gray-800 mb-4">Product Grid</h1>
