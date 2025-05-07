@@ -4,10 +4,12 @@ import Card from "./components/Card"
 import CounterApp from "./components/CounterApp";
 import Toggle from "./components/Toggle";
 import DataFetchGridCard from "./components/DataFetchGridCard";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
    <>
+   <ToDoList/>
    <DataFetchGridCard/>
    <Toggle/>
    <CounterApp/>
